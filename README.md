@@ -40,7 +40,7 @@ now, take a look inside `package.json`. our `client` script uses [budo](https://
 
 in case you don't already know, browserify is a tool that lets you require node modules on the client-side. you may have heard of [webpack](https://github.com/webpack/webpack). you can think of browserify as a less-powerful, but simpler, analog of webpack. browserify is  useful for a number of reasons, namely:
 
-1. it gives you access to everything on npmjs.com. just run `npm i --save <module-name>`, and ~boom~, you can `require` the module in your client-side code. minimal-friction developer experience.
+1. it gives you access to everything on npmjs.com. just run `npm i --save <module-name>`, and \~boom\~, you can `require` the module in your client-side code. minimal-friction developer experience.
 2. just like with typical server-side node.js, we can package our client-side code into modules and `require` them into other files as needed.
 3. browserify supports a number of [source transforms](https://github.com/substack/node-browserify/wiki/list-of-transforms). for example, this project comes with the [es2040](https://github.com/ahdinosaur/es2040) transform which compiles select ES6 features into valid ES5, allowing us to take advantage of fancy ES6 syntax like arrow functions, template strings, destructuring, etc.
 
