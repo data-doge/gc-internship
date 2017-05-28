@@ -24,7 +24,8 @@ our project's file structure looks like this:
 ├── package.json
 └── server
     ├── call-data.js
-    └── index.js
+    ├── index.js
+    └── user-data.js
 ```
 
 `server` contains a tiny express app which powers the json-api that your client will consume. do not modify any code inside this directory.
