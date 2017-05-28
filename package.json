@@ -21,7 +21,11 @@
     "url": "https://github.com/data-doge/code-challenge/issues"
   },
   "homepage": "https://github.com/data-doge/code-challenge",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "node-uuid": "^1.4.8"
+  },
   "devDependencies": {
     "budo": "^9.4.1",
     "es2040": "^1.2.5"
