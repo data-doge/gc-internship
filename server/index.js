@@ -1,7 +1,9 @@
 var express = require('express')
 var uuid = require('node-uuid')
 var bodyParser = require('body-parser')
+var isEqual = require('lodash.isequal')
 var callData = require('./call-data')
+var userData = require('./user-data')
 
 var token = uuid.v4()
 var app = express()
@@ -16,8 +18,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.post('/authenticate', function (req, res) {
-  var body = req.body
-  if (body.email === 'user@example.com' && body.password === 'doggo') {
+  var user = userData.find(function (u) {
+    isEqual(req.body.user, u)
+  })
+
+  if (user) {
     res.json({ token: token })
   } else {
     res.status(401).json({ error: 'invalid credentials' })
