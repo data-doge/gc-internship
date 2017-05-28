@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 
 app.post('/authenticate', function (req, res) {
   var user = userData.find(function (u) {
-    isEqual(req.body.user, u)
+    return isEqual(req.body.user, u)
   })
 
   if (user) {
