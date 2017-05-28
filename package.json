@@ -1,0 +1,29 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo . -d --serve bundle.js --live"
+  },
+  "browserify": {
+    "transform": [
+      "es2040"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/data-doge/code-challenge"
+  },
+  "author": "data-doge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/data-doge/code-challenge/issues"
+  },
+  "homepage": "https://github.com/data-doge/code-challenge",
+  "dependencies": {},
+  "devDependencies": {
+    "budo": "^9.4.1",
+    "es2040": "^1.2.5"
+  }
+}
