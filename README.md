@@ -70,3 +70,4 @@ the end result should look like this:
 - your code needs to be well-formatted and easy to read. good call, and [many other tech companies](https://standardjs.com/#who-uses-javascript-standard-style) use [javascript standard style](https://standardjs.com). i'll ask that you do the same. many text editors have [linter plugins](https://github.com/feross/standard#are-there-text-editor-plugins) to enforce standard style in your code.
 - to give me greater insight into your thought/build process, make your commits relatively small and frequent.
 - your css styling must very closely match the styles in the above gif.
+- as mentioned before, this project comes pre-configured with the [es2040](https://github.com/ahdinosaur/es2040) transform, meaning that you can use a decent selection of es6 features in your client-side code. i'd advise you to take advantage of these features, _especially template strings_.
