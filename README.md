@@ -65,7 +65,8 @@ the end result should look like this:
 
 **some things to keep in mind:**
 
-- you will need to examine [./server/index.js](./server/index.js) to learn what api endpoints are available to you, and how to work with them.
+- you will need to examine [./server/index.js](./server/index.js) to learn what api endpoints are available to you, and how to work with them. 
+- you will find that the call data returned by our json-api contains a good amount of information. as the above gif shows, we are only concerned with displaying the `sid`, `from`, and `result` properties of each call. 
 - notice that everything in the above gif happens on a single page. to keep things simple, we are not implementing routing. when a user successfully logs in, just hide the login form and show the calls table.
 - don't worry about persisting user login. ordinarily, on login success, we'd store a users credentials in a cookie or session. but for this exercise, we're not worrying about that.
 - your code needs to be well-formatted and easy to read. good call, and [many other tech companies](https://standardjs.com/#who-uses-javascript-standard-style) use [javascript standard style](https://standardjs.com). i'll ask that you do the same. many text editors have [linter plugins](https://github.com/feross/standard#are-there-text-editor-plugins) to enforce standard style in your code.
