@@ -38,7 +38,7 @@ our project's file structure looks like this:
 
 now, take a look inside `package.json`. our `client` script uses [budo](https://github.com/mattdesl/budo) to run our client-side code on a [browserify](https://github.com/substack/node-browserify) development server.
 
-in case you don't already know, browserify is a tool that lets you require node modules on the client-side. you may have heard of [webpack](https://github.com/webpack/webpack). you can think of browserify as a less-powerful, but simpler, analog of webpack. browserify is  useful for a number of reasons, namely:
+in case you don't already know, browserify is a tool that lets you `require` node modules on the client-side. you may have heard of [webpack](https://github.com/webpack/webpack). you can think of browserify as a less-powerful, but simpler, analog of webpack. browserify is  useful for a number of reasons, namely:
 
 1. it gives you access to everything on npmjs.com. just run `npm i --save <module-name>`, and \~boom\~, you can `require` the module in your client-side code. minimal-friction developer experience.
 2. just like with typical server-side node.js, we can package our client-side code into modules and `require` them into other files as needed.
