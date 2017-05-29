@@ -46,7 +46,7 @@ in case you don't already know, browserify is a tool that lets you `require` nod
 
 also, our budo development server is live-reloading. meaning, when you save changes in your client-side js/css in your text editor, your browser automagically updates.
 
-## set up
+## setup
 
 - fork and clone this project
 - `cd` into the project and run `npm install`
