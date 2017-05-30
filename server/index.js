@@ -29,7 +29,7 @@ app.post('/authenticate', function (req, res) {
   }
 })
 
-app.get('/calls', function (req, res, next) {
+app.get('/calls', function (req, res) {
   if (req.get('X-TOKEN') === token) {
     res.json({ calls: callData })
   } else {
